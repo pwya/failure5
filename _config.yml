@@ -1,4 +1,5 @@
 # Site Settings
+remote_theme: chrisrhymes/mere-blog-theme
 title: Mere Blog Theme
 tagline: Mere Blog Theme
 email: your-email@domain.com
