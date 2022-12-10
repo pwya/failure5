@@ -6,26 +6,9 @@ profile_picture:
 ---
 
 <p>
-你好！
-我是潘王雨昂，一个公管学科里熟练的数据工人
-欢迎来到我的个人主页
-
+  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
 </p>
 
 <p>
-教育背景：
-2016-2020 南开大学经济学院 管理学学士
-2016-2020 南开大学周恩来政府管理学院 政治学学士
-2021-2024 厦门大学管理学院 技术经济与管理硕士在读
+  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
 </p>
-
-<p>
-工作论文与发表待更新
-
-</p>
-
-<p>
-联系方式：pwya1998@126.com
-
-</p>
-
