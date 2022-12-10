@@ -1,8 +1,36 @@
-*.gem
-.bundle
-.sass-cache
-_site
-Gemfile.lock
+# Idea
+.idea/*
+
+# Mac OS
 .DS_Store
-.idea
-.jekyll-cache
+
+# Byte-compiled / optimized / DLL files
+*.manifest
+*.spec
+
+# Jekyll dev or build
+_site/*
+_development_tool/*
+.sass-cache/*
+*.css.map
+*.scssc
+.bundle/*
+/vendor/
+.jekyll-cache/*
+*/.jekyll-cache/*
+
+# Theme Gem
+Gemfile.lock
+*.gem
+.gems
+jekyll-theme-type-on-strap.gemspec
+
+# Node.js
+**/node_modules/*
+**/package-lock.json
+
+# Misc
+*-test.md
+*copy.md
+test/*
+/type-on-strap*/*
