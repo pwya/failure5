@@ -1,88 +1,63 @@
-# SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
-# Site Settings
-remote_theme: chrisrhymes/mere-blog-theme
-title: Mere Blog Theme
-tagline: Mere Blog Theme
-email: your-email@domain.com
+# Configurations
+title:            Jekyll Gitbook
+longtitle:        Jekyll Gitbook
+author:           HE Tao
+email:            sighingnow@gmail.com
 description: >
-  The demo site for Mere Blog Theme, made for Jekyll and GitHub pages websites
-baseurl: "/mere-blog-theme"
-url: "https://www.csrhymes.com"
-permalink: pretty
+  Build Jekyll site with the GitBook style.
 
-# THEME-SPECIFIC CONFIGURATION
-title: PanwangYuang                                   # site's title
-description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+version:          1.0
+gitbook_version:  3.2.3
 
-# Header and footer text
+url:              'https://sighingnow.github.io'
+baseurl:          '/jekyll-gitbook'
+rss:              RSS
 
-header_text: Pan.Wang.Yuang Personal website  # Change Blog header text
-header_feature_image: assets/img/header/triangular.jpeg
-header_feature_image_responsive: true
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+# bootstrap: use the remote theme for the site itself
+remote_theme: sighingnow/jekyll-gitbook
 
-# Blog
-excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
-post_navigation: true
-color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
 
-# Features
-# More in the _data folder for share buttons, author and language
-# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: true                                             # Enable if using math markup
-mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
-google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
-cookie_consent: false                                   # To respect the usage of cookies
-color_theme: auto                                       # auto, dark or light
+# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
+favicon_path:     /assets/gitbook/images/favicon.ico
 
-# Comments
-comments:
-  disqus_shortname:                                     # Your discus shortname for comments
-  cusdis_app_id:                                        # Your cusdis data-app-id
-  utterances:                                           # Enable by filling below information. For more info, go to https://utteranc.es
-    repo:                                               # your public comments repository (e.g. owner/repo)
-    issue-term:                                         # Issue term (e.g. "comment" consider issues with this word in the title as comments)
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
 
-# PAGINATION
-paginate: 5
-paginate_path: "/blog/page:num"
+syntax_highlighter_style: colorful
 
-# PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
-# BUILD SETTINGS
-sass:
-  style: compressed
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
+# Permalinks
+permalink:        /:categories/:year-:month-:day-:title:output_ext
 
-# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
-remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      author: "C.S. Rhymes"
-      layout: post
-      image: /img/home.jpg
-      show_sidebar: true
-  -
-    scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
+exclude:
+  - _drafts
 
 collections:
-  authors:
+  pages:
     output: true
+    permalink: /:collection/:path/
+
+page_width: 800px
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
