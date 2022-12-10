@@ -1,6 +1,16 @@
 # SITE CONFIGURATION
 baseurl: "/Type-on-Strap"
 url: "https://sylhare.github.io"
+# Site Settings
+remote_theme: chrisrhymes/mere-blog-theme
+title: Mere Blog Theme
+tagline: Mere Blog Theme
+email: your-email@domain.com
+description: >
+  The demo site for Mere Blog Theme, made for Jekyll and GitHub pages websites
+baseurl: "/mere-blog-theme"
+url: "https://www.csrhymes.com"
+permalink: pretty
 
 # THEME-SPECIFIC CONFIGURATION
 title: Type on Strap                                    # site's title
@@ -55,3 +65,23 @@ exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node
 
 # theme: type-on-strap                                  # if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "C.S. Rhymes"
+      layout: post
+      image: /img/home.jpg
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+collections:
+  authors:
+    output: true
