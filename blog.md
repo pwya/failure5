@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 个人原创
+title: Blog
 slug: /blog
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: work
-title: 网络公开资源
+title: Work
 slug: /work
 
 ---
