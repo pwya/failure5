@@ -20,7 +20,7 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 
 # Header and footer text
 
-header_text: 我是潘王雨昂：一个公管学科的熟练数据工人  # Change Blog header text
+header_text: Pan.Wang.Yuang Personal website  # Change Blog header text
 header_feature_image: assets/img/header/triangular.jpeg
 header_feature_image_responsive: true
 footer_text: >
